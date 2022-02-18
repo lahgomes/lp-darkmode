@@ -1,9 +1,11 @@
 export const theme = {
-  light: 300,
-  normal: 400,
-  medium: 500,
-  bold: 700,
+  white: '#FFFFFF',
+  purple: '#713FFF',
+  darkPurple: '#3C184E',
 
-  fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-  red: 'red',
+  fontFamilyTitle: "'Merriweather', serif",
+  fontFamilyText: "'Rubik', sans-serif",
+
+  normal: 400,
+  black: 900,
 }

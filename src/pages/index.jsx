@@ -1,13 +1,7 @@
-import styled from 'styled-components'
+import HomeLayout from '../layout/Home'
 
-export default function Home() {
-  const Title = styled.h1`
-    color: ${props => props.theme.red};
-  `
-
-  return (
-    <div>
-      <Title>oi</Title>
-    </div>
-  )
+const Home = () => {
+  return <HomeLayout />
 }
+
+export default Home
