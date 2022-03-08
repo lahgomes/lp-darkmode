@@ -1,5 +1,6 @@
-import * as S from './styles'
+import Image from 'next/image'
 import Header from '../../Header'
+import * as S from './styles'
 
 const HomeLayout = () => {
   return (
@@ -19,12 +20,26 @@ const HomeLayout = () => {
           </div>
         </section>
         <section>
-          <p>dog</p>
-          <p>dog</p>
-          <p>dog</p>
-          <p>dog</p>
-          <p>dog</p>
-          <p>dog</p>
+          <S.Shape>
+            <div>
+              <Image
+                src="/assets/viralata-home 1.png"
+                alt="vira-lata sorrindo"
+                width={340}
+                height={350}
+                quality={80}
+              />
+            </div>
+            <div>
+              <Image
+                src="/assets/racao-no-chao 2.png"
+                alt="ração para cachorro"
+                width={230}
+                height={200}
+                quality={80}
+              />
+            </div>
+          </S.Shape>
         </section>
       </S.Container>
     </>
