@@ -21,6 +21,14 @@ export const Title = styled.h1`
   font-size: 6rem;
   font-weight: ${props => props.theme.black};
   padding-bottom: 2rem;
+
+  &:after {
+    border: solid #713fff;
+    border-radius: 2rem;
+    content: '';
+    display: block;
+    width: 21rem;
+  }
 `
 
 export const Text = styled.p`

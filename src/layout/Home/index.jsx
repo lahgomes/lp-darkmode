@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Header from '../../components/Header'
 import * as S from './styles'
 
@@ -30,7 +29,7 @@ const HomeLayout = () => {
             />
           </S.Shape>
           <img
-            src="/assets/racao-no-chao 2.png"
+            src="/assets/racao-no-chao-2.png"
             alt="ração para cachorro"
             width="280"
             height="240"
