@@ -21,8 +21,6 @@ export const Title = styled.h1`
   font-size: 6rem;
   font-weight: ${props => props.theme.black};
   padding-bottom: 2rem;
-  padding-right: 5rem;
-  padding-top: 10rem;
 `
 
 export const Text = styled.p`
@@ -32,6 +30,7 @@ export const Text = styled.p`
   font-weight: ${props => props.theme.normal};
   padding-bottom: 2rem;
 `
+
 export const Button = styled.button`
   background-color: ${props => props.theme.purple};
   border-radius: 4rem;
@@ -43,17 +42,36 @@ export const Button = styled.button`
   font-weight: ${props => props.theme.normal};
   padding: 1.2rem 3.2rem;
 `
+
 export const Contato = styled.a`
   font-family: ${props => props.theme.fontFamilyText};
   font-size: 1.6rem;
   font-weight: ${props => props.theme.normal};
   margin-left: 2.4rem;
 `
+
 export const Shape = styled.div`
   background: linear-gradient(180deg, #3cb7de 0%, #3fa3ff 100%);
   border-radius: 500px 0px 0px 500px;
   height: 500px;
   position: relative;
-  transform: rotate(-17.91deg) translate(191px, 61px);
+  transform: rotate(-17.91deg) translate(213px, 67px);
   width: 800px;
+  overflow: hidden;
+
+  .cachorro {
+    position: absolute;
+    transform: rotate(15.09deg) translate(71px, 29px);
+  }
+`
+
+export const WrapperIllustration = styled.section`
+  position: relative;
+
+  .comida {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-70%);
+  }
 `

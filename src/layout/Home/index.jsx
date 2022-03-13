@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Header from '../../Header'
+import Header from '../../components/Header'
 import * as S from './styles'
 
 const HomeLayout = () => {
@@ -9,7 +9,7 @@ const HomeLayout = () => {
       <S.Container>
         <section>
           <S.Title>
-            Ajude quem <p>precisa de ajuda</p>
+            Ajude quem <br /> precisa de ajuda
           </S.Title>
           <S.Text>
             Com apenas 1 real você pode ajudar a alimentar cães de rua.
@@ -19,28 +19,24 @@ const HomeLayout = () => {
             <S.Contato href="#">Entrar em contato</S.Contato>
           </div>
         </section>
-        <section>
+        <S.WrapperIllustration>
           <S.Shape>
-            <div>
-              <Image
-                src="/assets/viralata-home 1.png"
-                alt="vira-lata sorrindo"
-                width={340}
-                height={350}
-                quality={80}
-              />
-            </div>
-            <div>
-              <Image
-                src="/assets/racao-no-chao 2.png"
-                alt="ração para cachorro"
-                width={230}
-                height={200}
-                quality={80}
-              />
-            </div>
+            <img
+              src="/assets/viralata-home-1.png"
+              alt="vira-lata sorrindo"
+              width="450"
+              height="465"
+              className="cachorro"
+            />
           </S.Shape>
-        </section>
+          <img
+            src="/assets/racao-no-chao 2.png"
+            alt="ração para cachorro"
+            width="280"
+            height="240"
+            className="comida"
+          />
+        </S.WrapperIllustration>
       </S.Container>
     </>
   )
