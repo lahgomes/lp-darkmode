@@ -23,11 +23,13 @@ export const Title = styled.h1`
   padding-bottom: 2rem;
 
   &:after {
-    border: solid #713fff;
-    border-radius: 2rem;
     content: '';
     display: block;
-    width: 21rem;
+    width: 22rem;
+    height: 2rem;
+    border: 5px solid #713fff;
+    border-color: #713fff transparent transparent transparent;
+    border-radius: 246%/113px 50px 0 0;
   }
 `
 
