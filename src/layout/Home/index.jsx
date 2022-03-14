@@ -1,4 +1,5 @@
 import Header from '../../components/Header'
+import SwitchToggle from '../../components/SwitchToggle'
 import * as S from './styles'
 
 const HomeLayout = () => {
@@ -37,6 +38,7 @@ const HomeLayout = () => {
           />
         </S.WrapperIllustration>
       </S.Container>
+      <SwitchToggle />
     </>
   )
 }
