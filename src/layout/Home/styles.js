@@ -16,7 +16,7 @@ export const Container = styled.main`
 `
 
 export const Title = styled.h1`
-  color: ${props => props.theme.darkPurple};
+  color: ${props => props.theme.text};
   font-family: ${props => props.theme.fontFamilyTitle};
   font-size: 6rem;
   font-weight: ${props => props.theme.black};
@@ -28,13 +28,14 @@ export const Title = styled.h1`
     width: 22rem;
     height: 2rem;
     border: 5px solid #713fff;
-    border-color: #713fff transparent transparent transparent;
+    border-color: ${props => props.theme.button} transparent transparent
+      transparent;
     border-radius: 246%/113px 50px 0 0;
   }
 `
 
 export const Text = styled.p`
-  color: ${props => props.theme.darkPurple};
+  color: ${props => props.theme.text};
   font-family: ${props => props.theme.fontFamilyText};
   font-size: 1.6rem;
   font-weight: ${props => props.theme.normal};
@@ -42,7 +43,7 @@ export const Text = styled.p`
 `
 
 export const Button = styled.button`
-  background-color: ${props => props.theme.purple};
+  background-color: ${props => props.theme.button};
   border-radius: 4rem;
   border: none;
   color: ${props => props.theme.white};
@@ -59,6 +60,7 @@ export const Button = styled.button`
 `
 
 export const Contato = styled.a`
+  color: ${props => props.theme.button};
   font-family: ${props => props.theme.fontFamilyText};
   font-size: 1.6rem;
   font-weight: ${props => props.theme.normal};
@@ -66,7 +68,8 @@ export const Contato = styled.a`
 `
 
 export const Shape = styled.div`
-  background: linear-gradient(180deg, #3cb7de 0%, #3fa3ff 100%);
+  //background: linear-gradient(180deg, #3cb7de 0%, #3fa3ff 100%);
+  background-color: ${props => props.theme.shape};
   border-radius: 500px 0px 0px 500px;
   height: 500px;
   position: relative;

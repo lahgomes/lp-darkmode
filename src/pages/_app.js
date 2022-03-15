@@ -1,5 +1,5 @@
 import GlobalStyles from '../styles/global'
-import { globalTheme, lightMode } from '../styles/theme'
+import { globalTheme, lightMode, darkMode } from '../styles/theme'
 import { ThemeProvider } from 'styled-components'
 
 function MyApp({ Component, pageProps }) {
