@@ -42,14 +42,14 @@
 }
 
 .switch:checked + div {
-  width: 68px;
+  width: 60px;
   background-position: 0 0;
   background-color: #713fff;
 }
 
 .switch + div {
-  width: 68px;
-  height: 21px;
+  width: 60px;
+  height: 20px;
 }
 
 .switch:checked + div {
@@ -58,8 +58,8 @@
 
 .switch + div > div {
   float: left;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   border-radius: inherit;
   background: #ffffff;
   transition-timing-function: cubic-bezier(1, 0, 0, 1);
@@ -82,5 +82,5 @@
 }
 
 .switch:checked + div > div {
-  transform: translate3d(46px, 0, 0);
+  transform: translate3d(38px, 0, 0);
 }

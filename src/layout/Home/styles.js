@@ -51,6 +51,11 @@ export const Button = styled.button`
   font-size: 1.6rem;
   font-weight: ${props => props.theme.normal};
   padding: 1.2rem 3.2rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 export const Contato = styled.a`
