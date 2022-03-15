@@ -1,16 +1,17 @@
-import GlobalStyles from '../styles/global'
-import { globalTheme, lightMode, darkMode } from '../styles/theme'
 import { ThemeProvider } from 'styled-components'
+import { ThemeStorage } from '../context/themeContext'
+import GlobalStyles from '../styles/global'
+import { globalTheme } from '../styles/theme'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <ThemeProvider theme={globalTheme}>
-        <ThemeProvider theme={lightMode}>
-          <GlobalStyles />
+      <ThemeStorage>
+        <GlobalStyles />
+        <ThemeProvider theme={globalTheme}>
           <Component {...pageProps} />
         </ThemeProvider>
-      </ThemeProvider>
+      </ThemeStorage>
     </>
   )
 }

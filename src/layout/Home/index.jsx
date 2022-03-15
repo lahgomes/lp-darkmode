@@ -1,11 +1,10 @@
-import Header from '../../components/Header'
-import SwitchToggle from '../../components/SwitchToggle'
+import BaseLayout from '../Base'
+
 import * as S from './styles'
 
 const HomeLayout = () => {
   return (
-    <>
-      <Header />
+    <BaseLayout>
       <S.Container>
         <section>
           <S.Title>
@@ -38,8 +37,7 @@ const HomeLayout = () => {
           />
         </S.WrapperIllustration>
       </S.Container>
-      <SwitchToggle />
-    </>
+    </BaseLayout>
   )
 }
 
